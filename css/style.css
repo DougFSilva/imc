@@ -1,0 +1,377 @@
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 2rem auto;
+}
+
+
+p {
+    text-align: justify;
+    margin: 1rem auto;
+}
+
+ul {
+    margin-left: 2rem;
+}
+
+li {
+    margin: .5rem auto;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/banner-principal2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    background-blend-mode: overlay;
+    min-height: 30rem;
+    padding: 1rem;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--cor-fundo);
+    opacity: 0.8;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.header-container nav {
+    width: 100%;
+}
+
+.menu {
+    display: none !important;
+    text-align: start;
+}
+
+.header-container p {
+    color: var(--cor-secundaria);
+    font-size: 1.5rem;
+}
+
+.header-container nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 10px;
+    margin: 1rem 0 0 0;
+    text-align: center;
+}
+
+.header-container nav ul.active {
+    display: block;
+}
+
+.header-container nav ul li {
+    padding: 10px;
+    border-radius: 6px;
+    color: var(--cor-texto);
+}
+
+.header-container nav ul li:hover {
+    transition: 0.3s;
+    background-color: var(--cor-primaria);
+    color: var(--cor-fundo);
+    opacity: 0.8;
+}
+
+section {
+    padding: 4rem 0;
+}
+
+.container {
+    width: 50rem;
+    margin: auto;
+}
+
+.animacao-aparecer {
+    animation: apear linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+
+#secao-calculadora {
+    background-image: url("../assets/banner-calculadora.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    background-blend-mode: overlay;
+    min-height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+
+#secao-calculadora>div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.calculadora-resultado {
+    border: 4px solid var(--cor-borda);
+    padding: 1rem;
+    border-radius: 10px;
+    margin-right: 6rem;
+    width: 28rem;
+    background-color: white;
+    animation: slideIn 1s ease-out;
+    display: none;
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    text-align: center;
+}
+
+.calculadora-resultado p:nth-child(2) {
+    margin-bottom: 1rem;
+}
+
+.calculadora {
+    width: 20rem;
+    min-width: 20rem;
+    background-color: var(--cor-secundaria);
+    border: 4px solid var(--cor-borda);
+    border-radius: 10px;
+    margin-right: 6rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.calculadora label,
+.calculadora h2 {
+    color: white;
+}
+
+.calculadora input {
+    width: 100%;
+    margin: 0.5rem auto;
+    text-align: center;
+}
+
+.calculadora button {
+    background-color: var(--cor-destaque);
+    cursor: pointer;
+    margin-top: 1.5rem;
+    height: 2.5rem;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+#secao-alimentacao {
+    padding: 2rem 0;
+    background-color: rgba(245, 245, 245);
+}
+
+#secao-alimentacao div div {
+    display: flex;
+}
+
+.img-alimentacao {
+    width: 30rem;
+}
+
+#secao-bullying div div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+footer {
+    padding: 8rem 0 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    background: rgb(100, 87, 143);
+    background: linear-gradient(0deg, rgba(100, 87, 143, 1) 73%, rgba(255, 255, 255, 1) 100%);
+    color: white;
+}
+
+footer div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer li a {
+    color: white;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.footer-desenvolvedor p {
+    text-align: center;
+    font-family: "Brush Script MT", "Brush Script Std", cursive;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes apear {
+    from {
+        opacity: 0;
+        scale: 0.8;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@media (max-width:480px) {}
+
+@media (max-width:768px) {
+
+    header {
+        justify-content: flex-start;
+        min-height: auto;
+    }
+
+    .header-container {
+
+        &> :nth-child(1) {
+            order: 2;
+        }
+
+        &> :nth-child(2) {
+            order: 3;
+        }
+
+        &> :nth-child(3) {
+            order: 1;
+        }
+
+        & p {
+            font-size: 1rem;
+
+        }
+    }
+
+    .header-container nav ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .menu {
+        display: block !important;
+    }
+
+    .header-container nav ul {
+        gap: 0;
+        margin: 0;
+        display: none;
+        transition: 1s;
+    }
+
+    section {
+        padding: 0;
+    }
+
+    .container {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    #secao-calculadora {
+        padding: 1rem;
+    }
+
+    #secao-calculadora > div {
+        flex-direction: column;
+        align-items: center;
+
+        & > :nth-child(1){
+            order: 2;
+        }
+
+        & > :nth-child(2) {
+            order: 1;
+        }
+
+        gap: 10px;
+    }
+
+    .calculadora {
+        width: 100%;
+        margin: 0;
+        order: 2;
+    }
+
+    .calculadora-resultado {
+        width: 100%;
+        margin: auto;
+    }
+
+    #secao-alimentacao {
+        padding: 0;
+    }
+
+    #secao-alimentacao div div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #secao-bullying div div img {
+        width: 100%;
+    }
+
+    footer div{
+        flex-direction: column;
+    }
+}

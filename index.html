@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saúde e Consciência - Calculadora de IMC</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/color.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Saúde e Consciência</h1>
+            <p>Calcule seu IMC e descubra mais sobre seu corpo e bem-estar!</p>
+            <nav>
+                <i class="fa-solid fa-bars fa-2x menu" id="menu"></i>
+                <ul>
+                    <a href="#secao-o-que-e-imc">
+                        <li>O que é o IMC?</li>
+                    </a>
+                    <a href="#secao-calculadora">
+                        <li>Calculadora</li>
+                    </a>
+                    <a href="#secao-obesidade">
+                        <li>Obesidade no Mundo</li>
+                    </a>
+                    <a href="#secao-alimentacao">
+                        <li>Alimentação Saudável</li>
+                    </a>
+                    <a href="#secao-bullying">
+                        <li>Combate ao Bullying</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="secao-o-que-e-imc">
+            <div class="container">
+                <h2>O que é o IMC?</h2>
+                <p>
+                    O Índice de Massa Corporal (IMC) é uma ferramenta amplamente utilizada para avaliar
+                    se o peso de um indivíduo está adequado à sua altura, servindo como um indicador
+                    inicial de magreza, peso saudável, sobrepeso e obesidade.
+                </p>
+                <p>
+                    Embora seja uma ferramenta prática e de fácil cálculo, é importante ressaltar que o
+                    IMC possui limitações. Ele não distingue entre massa muscular e gordura corporal,
+                    o que pode levar a interpretações equivocadas em atletas e pessoas com alta massa
+                    muscular, que podem apresentar um IMC elevado mesmo estando saudáveis. Além disso,
+                    o IMC não considera a distribuição da gordura corporal, um fator relevante para a
+                    avaliação do risco à saúde.
+                </p>
+                <p>
+                    Portanto, o IMC deve ser interpretado com cautela e não deve ser a única medida
+                    utilizada para avaliar a saúde de uma pessoa. Sua principal utilidade reside na
+                    facilidade de cálculo e na capacidade de fornecer uma referência rápida sobre a
+                    relação peso-altura, servindo como um ponto de partida para uma avaliação mais
+                    completa, que considere outros fatores como composição corporal, hábitos alimentares
+                    e histórico de saúde.
+                </p>
+            </div>
+        </section>
+        <section id="secao-calculadora">
+            <div class="animacao-aparecer">
+                <div class="calculadora-resultado">
+                    <h2>Resultado</h2>
+                    <p class="resultado-imc"></p>
+                    <p class="comentario-resultado-imc"></p>
+                </div>
+                <div class="calculadora">
+                    <h2>Calcule seu IMC</h2>
+                    <label for="peso">Peso (kg):</label>
+                    <input type="number" id="peso" placeholder="Digite seu peso">
+
+                    <label for="altura">Altura (m):</label>
+                    <input type="number" id="altura" placeholder="Digite sua altura">
+
+                    <button class="botao-calcular">Calcular IMC</button>
+                </div>
+            </div>
+
+        </section>
+        <section id="secao-obesidade">
+            <div class="container animacao-aparecer">
+                <h2>Obesidade no Mundo</h2>
+                <p>A obesidade é um dos maiores desafios de saúde pública no mundo atualmente. Ela tem aumentado
+                    drasticamente nas últimas décadas, impulsionada por fatores como hábitos alimentares pouco
+                    saudáveis,
+                    sedentarismo e influências do ambiente moderno.</p>
+                <ul>
+                    <li>De acordo com a Organização Mundial da Saúde (OMS), mais de 1 bilhão de pessoas no mundo são
+                        obesas,
+                        incluindo 650 milhões de adultos, 340 milhões de adolescentes e 39 milhões de crianças.</li>
+                    <li>A obesidade triplicou desde 1975 e continua crescendo em ritmo acelerado.</li>
+                    <li>Em 2022, quase 40% da população mundial estava com sobrepeso e cerca de 13% eram obesos.</li>
+                    <li>Se essa tendência continuar, estima-se que mais de 50% da população mundial poderá estar acima
+                        do
+                        peso até 2035.</li>
+                </ul>
+            </div>
+        </section>
+        <section id="secao-alimentacao">
+            <div class="container animacao-aparecer">
+                <h2>Dicas de Alimentação saudável</h2>
+                <div>
+                    <ul>
+                        <li>Controle o consumo de açúcar e sal</li>
+                        <li>Beba bastante água</li>
+                        <li>Coma devagar e mastigue bem</li>
+                        <li>Inclua proteínas magras nas refeições</li>
+                        <li>Consuma gorduras boas</li>
+                        <li>Faça refeições equilibradas</li>
+                        <li>Mantenha uma rotina alimentar</li>
+                        <li>Reduza o consumo de álcool e bebidas industrializadas</li>
+                        <li>Planeje suas refeições</li>
+                    </ul>
+                    <img class="img-alimentacao" src="./assets/alimentacao.png" alt="">
+                </div>
+
+            </div>
+        </section>
+        <section id="secao-bullying">
+            <div class="container animacao-aparecer">
+                <h2 id="bullying">Combate ao bullying</h2>
+                <div>
+                    <p>O bullying por causa do peso é uma realidade que afeta muitas pessoas, especialmente crianças e
+                        adolescentes. Comentários ofensivos, apelidos pejorativos e discriminação podem causar impactos
+                        emocionais graves, como baixa autoestima, ansiedade e até depressão.</p>
+
+                    <img class="img-bulliying" src="./assets/bullying.png" alt="">
+
+                    <p> É importante lembrar que cada corpo é único e que o respeito e a empatia devem estar sempre em
+                        primeiro
+                        lugar. A aparência não define o valor de ninguém, e a saúde vai muito além do peso ou do IMC. Em
+                        vez
+                        de
+                        julgar, devemos incentivar hábitos saudáveis de forma positiva, sem pressão ou vergonha.</p>
+
+                    <p>Seja um agente de mudança: pratique a empatia, apoie quem precisa e promova um ambiente mais
+                        acolhedor e
+                        respeitoso para todos. Juntos, podemos construir uma sociedade mais inclusiva e saudável! </p>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <div class="animacao-aparecer">
+            <img src="./assets/logo.png" alt="">
+            <nav>
+                <ul>
+                    <li><a href="#secao-o-que-e-imc">O que é o IMC?</a></li>
+                    <li><a href="#secao-calculadora">Calculadora</a></li>
+                    <li><a href="#secao-obesidade">Obesidade no Mundo</a></li>
+                    <li><a href="#secao-alimentacao">Alimentação Saudável</a></li>
+                    <li><a href="#secao-bullying">Combate ao Bullying</a></li>
+                </ul>
+            </nav>
+            <div class="footer-desenvolvedor">
+                <p>Desenvolvido por prof. Douglas Ferreira</p>
+            </div>
+        </div>
+
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
