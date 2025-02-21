@@ -285,6 +285,7 @@ footer li a {
 
     .header-container {
 
+        width: 100%;
         &> :nth-child(1) {
             order: 2;
         }
